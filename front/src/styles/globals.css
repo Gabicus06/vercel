@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --primary-color: #e5e7eb;
+    --secondary-color: darkorchid;
+}
+
+body{
+    @apply flex flex-col min-h-screen bg-[--primary-color];
+}
+
+footer{
+    @apply mt-auto
+}
+
+.container{
+    @apply max-w-screen-xl mx-auto my-0 px-6 py-0
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-medium 
+}
+
+h1{
+    @apply text-4xl
+}
+
+h2{
+    @apply text-3xl
+}
+
+h3{
+    @apply text-2xl
+}
+
+h4{
+    @apply text-xl
+}
+
+h5{
+    @apply text-base
+}
