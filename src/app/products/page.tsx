@@ -3,7 +3,7 @@ import Grid from "@/components/Grid"
 import { IProduct } from "@/components/Cards/types"
 import { getPproductsService } from "@/services/productsService"
 
-const page = async()=>{
+const Page = async()=>{
     const products = await getPproductsService()
     
     return (
@@ -15,4 +15,4 @@ const page = async()=>{
     )
 }
 
-export default page
+export default Page

@@ -2,7 +2,7 @@ import Detail from "@/components/Detail"
 import { getProductById } from "@/services/productsService"
 import { notFound } from "next/navigation"
 
-const page = async({params}: {params:{id:string}}) => {
+const Page = async({params}: {params:{id:string}}) => {
     const { id } = params
     const product = await getProductById(id)
 
@@ -15,4 +15,4 @@ const page = async({params}: {params:{id:string}}) => {
   )
 }
 
-export default page
+export default Page

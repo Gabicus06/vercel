@@ -1,7 +1,7 @@
 import DashboardData from "@/components/DashboardData"
 
 
-const page = () => {
+const Page = () => {
   return (
     <div className="m-10">
       <h1>Mi cuenta:</h1>
@@ -10,4 +10,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

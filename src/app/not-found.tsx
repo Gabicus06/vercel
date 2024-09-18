@@ -1,9 +1,9 @@
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   return (
     <div>404 - No se encontró</div>
   )
 }
 
-export default page
+export default Page

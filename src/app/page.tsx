@@ -3,7 +3,7 @@ import Cards from "../components/Cards"
 import Hero from "@/components/Hero";
 import Category from "@/components/Category";
 
-const page = ()=>{
+const Page = ()=>{
   return (
     <>
       <Hero />
@@ -13,4 +13,4 @@ const page = ()=>{
 }
 
 
-export default page 
+export default Page 
