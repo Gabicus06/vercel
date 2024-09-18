@@ -1,0 +1,3 @@
+.navbarItem{
+    @apply mx-4 hover:text-tertiary
+}
