@@ -3,7 +3,7 @@ import { IProduct } from "@/components/Cards/types"
 import CartDetail from "@/components/CartDetail"
 import { useEffect, useState } from "react"
 
-const page = () => {
+const Page = () => {
   const [cart, setCart] = useState<IProduct[]>([])
   
   useEffect(()=>{
@@ -30,4 +30,4 @@ const page = () => {
   }
 }
 
-export default page
+export default Page
