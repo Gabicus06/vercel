@@ -4,7 +4,7 @@ import { AuthContext } from "@/contexts/authContext"
 import { useRouter } from "next/navigation"
 import { useContext, useEffect } from "react"
 
-const dashboardData = () => {
+const DashboardData = () => {
   const router = useRouter()
   const { user } = useContext(AuthContext)
 
@@ -36,4 +36,4 @@ const dashboardData = () => {
   )
 }
 
-export default dashboardData
+export default DashboardData

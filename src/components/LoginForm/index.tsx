@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation"
 import { AuthContext } from "@/contexts/authContext"
 
 
-const loginForm = () => {
+const LoginForm = () => {
   const { setUser } = useContext(AuthContext)
   const router = useRouter()
   const initialData: ILoginForm = { email: "", password: ""}
@@ -76,4 +76,4 @@ const loginForm = () => {
   )
 }
 
-export default loginForm
+export default LoginForm

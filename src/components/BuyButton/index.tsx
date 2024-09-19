@@ -10,7 +10,7 @@ interface IBuyButtonProps{
   product: IProduct
 }
 
-const buyButton = ({ product }: IBuyButtonProps) => {
+const BuyButton = ({ product }: IBuyButtonProps) => {
   const { user } = useContext(AuthContext)
   const router = useRouter()
   
@@ -34,4 +34,4 @@ const buyButton = ({ product }: IBuyButtonProps) => {
   )
 }
 
-export default buyButton
+export default BuyButton

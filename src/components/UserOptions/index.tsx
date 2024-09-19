@@ -10,7 +10,7 @@ import { AiOutlineLogout } from "react-icons/ai";
 
 
 
-const userOptions = () => {
+const UserOptions = () => {
   const { user, logout } = useContext(AuthContext)
   if(!user){
     return(
@@ -30,4 +30,4 @@ const userOptions = () => {
   }
 }
 
-export default userOptions
+export default UserOptions

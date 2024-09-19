@@ -6,7 +6,7 @@ import { IProduct } from "../Cards/types"
 import Grid from "../Grid"
 import Cards from "../Cards"
 
-const clientProducts = async () => {
+const ClientProducts = async () => {
   const [data, setdata] = useState<IProduct[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [hasError, setHasError] = useState(false)
@@ -33,4 +33,4 @@ const clientProducts = async () => {
   )
 }
 
-export default clientProducts
+export default ClientProducts

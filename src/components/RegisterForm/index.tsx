@@ -7,7 +7,7 @@ import { IRegisterForm } from "@/interfaces/forms"
 import { registerService } from "@/services/authServices"
 import { useRouter } from "next/navigation"
 
-const registerForm = () => {
+const RegisterForm = () => {
   const router = useRouter()
   const initialData:IRegisterForm = { name:"", address:"", phone: "", email: "", password: ""}
   const [data, setData] = useState(initialData)
@@ -115,4 +115,4 @@ const registerForm = () => {
   )
 }
 
-export default registerForm
+export default RegisterForm

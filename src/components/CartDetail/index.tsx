@@ -11,13 +11,6 @@ interface CartDetailProps {
 
 const CartDetail = ({ cart, clearCart}: CartDetailProps) => {
   const { user } = useContext(AuthContext)
-  
-  // useEffect(() =>{
-  //   if (typeof window !== "undefined" && window.localStorage){
-  //     const storedCart = localStorage.getItem("cart")
-  //     setCart(storedCart? JSON.parse(storedCart) : [])
-  //   }
-  // }, [])
 
   const handleOrder = async() =>{
     const url = process.env.NEXT_PUBLIC_API_URL + "/orders" || ""
@@ -59,8 +52,8 @@ const CartDetail = ({ cart, clearCart}: CartDetailProps) => {
     <div className="mt-8 flex justify-around flex-wrap">
       <div className="mb-8 flex flex-col gap-1 text-lg">
         {cart.map((product: IProduct)=>(
-          <div className="flex justify-between gap-12">
-            <div key={product.id}>{ product.name}</div>
+          <div key={product.id} className="flex justify-between gap-12">
+            <div>{ product.name}</div>
             <div> USD ${product.price}</div>
           </div>
         ))}
